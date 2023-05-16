@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>09 - Colors</title>
+    <script type="text/javascript">
+        var colors = ["red", "green", "blue"]
+
+        function displayArray() {
+            document.getElementById("array").innerHTML = colors.join(", ")
+        }
+
+        function addColorToBeginning() {
+            var color = prompt("Enter color to add to the beginning:")
+            colors.unshift(color)
+            displayArray()
+        }
+
+        function addColorToEnd() {
+            var color = prompt("Enter color to add to the end:")
+            colors.push(color)
+            displayArray()
+        }
+
+        function addTwoColorsToBeginning() {
+            colors.unshift("purple", "orange")
+            displayArray()
+        }
+
+        function deleteFirstColor() {
+            colors.shift()
+            displayArray()
+        }
+
+        function deleteLastColor() {
+            colors.pop()
+            displayArray()
+        }
+
+        function addColorAtPosition() {
+            var position = prompt("Enter position where you want to add color:")
+            var color = prompt("Enter color to add:")
+            colors.splice(position, 0, color)
+            displayArray()
+        }
+
+        function deleteColorAtPosition() {
+            var position = prompt("Enter position from where you want to delete color(s):")
+            var count = prompt("Enter number of colors to delete:")
+            colors.splice(position, count)
+            displayArray()
+        }
+    </script>
+</head>
+
+<body>
+    <p id="array"></p>
+    <button onclick="addColorToBeginning()">Add Color to Beginning</button>
+    <button onclick="addColorToEnd()">Add Color to End</button>
+    <button onclick="addTwoColorsToBeginning()">Add Two Colors to Beginning</button>
+    <button onclick="deleteFirstColor()">Delete First Color</button>
+    <button onclick="deleteLastColor()">Delete Last Color</button>
+    <button onclick="addColorAtPosition()">Add Color at Position</button>
+    <button onclick="deleteColorAtPosition()">Delete Color at Position</button>
+
+    <script type="text/javascript">
+        displayArray()
+    </script>
+</body>
+
+</html>
