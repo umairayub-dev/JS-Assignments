@@ -2,27 +2,47 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events</title>
 </head>
 
 <body>
-    Assignemnt 43-48 Events
+  Assignemnt 43-48 Events
 
-    <hr>
-    <a href="#" id="myLink">Click me!</a>
-    <hr>
+  <hr>
+  <a href="#" id="myLink">Click me!</a>
+  <hr>
 
-    <H2>Mobile Phone Lookup</H2>
-    <img src="https://images.priceoye.pk/infinix-hot-12i-pakistan-priceoye-9ga0s-270x270.webp" class="mobile-image">
-    <img src="https://images.priceoye.pk/infinix-note-12-g96-pakistan-priceoye-df4xm-270x270.webp" class="mobile-image">
-    <img src="https://images.priceoye.pk/infinix-smart-7-pakistan-priceoye-x5xr8-270x270.webp" class="mobile-image">
-    <hr>
-    
-    <script src="./app.js">
-    </script>
+  <h2>Mobile Phone Lookup</h2>
+  <img src="https://images.priceoye.pk/infinix-hot-12i-pakistan-priceoye-9ga0s-270x270.webp" class="mobile-image">
+  <img src="https://images.priceoye.pk/infinix-note-12-g96-pakistan-priceoye-df4xm-270x270.webp" class="mobile-image">
+  <img src="https://images.priceoye.pk/infinix-smart-7-pakistan-priceoye-x5xr8-270x270.webp" class="mobile-image">
+  <hr>
+
+  <h2>Student Table</h2>
+  <table id="studentTable">
+    <tr>
+      <th>Student ID</th>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Action</th>
+    </tr>
+  </table>
+
+  <hr>
+  <h2>Bulb, MouseOver</h2>
+  <img id="image" src="https://media.geeksforgeeks.org/wp-content/uploads/OFFbulb.jpg" onmouseover="changeImage()" onmouseout="resetImage()" />
+  <hr>
+  <h2>Counter</h2>
+  <h3 id="count">0</h3>
+  <button onclick="increase()">Increase</button>
+  <button onclick="decrease()">Decrease</button>
+  <hr>
+
+  <script src="./app.js">
+  </script>
 </body>
 
 </html>
