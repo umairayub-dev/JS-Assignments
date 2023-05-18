@@ -257,5 +257,3 @@ var radius = 5
 document.write("<br> The radius is " + radius)
 document.write("<br> The circumeference is " + calcCircumference(radius))
 document.write("<br> The area is " + calcArea(radius))
-
-document.write("<hr>")
