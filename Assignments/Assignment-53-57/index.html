@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events</title>
+
+  <style>
+    button {
+      font-size: 24px;
+    }
+    .image {
+      cursor: pointer;
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .modal img {
+      display: block;
+      margin: 20px auto;
+      max-width: 90%;
+      max-height: 90%;
+    }
+
+    .close {
+      color: #fff;
+      font-size: 30px;
+      font-weight: bold;
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      cursor: pointer;
+    }
+
+    .close:hover {
+      color: #ccc;
+    }
+  </style>
+</head>
+
+<body>
+  Assignemnt 53-57 Events
+
+  <hr>
+  <h2>Modal</h2>
+  <div id="imageContainer">
+    <img
+      src="https://images.pexels.com/photos/4927787/pexels-photo-4927787.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+      alt="Image 1" class="image" width="220px" height="295px">
+    <img
+      src="https://images.pexels.com/photos/16307711/pexels-photo-16307711/free-photo-of-red-cabrio-car-driving-in-the-desert.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+      alt="Image 2" class="image" width="220px" height="295px">
+    <img
+      src="https://images.pexels.com/photos/15252557/pexels-photo-15252557/free-photo-of-man-taking-photo-on-street.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+      alt="Image 3" class="image" width="220px" height="295px">
+    <img
+      src="https://images.pexels.com/photos/16066231/pexels-photo-16066231/free-photo-of-city-art-building-painting.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+      alt="Image 4" class="image" width="220px" height="295px">
+  </div>
+
+  <div id="modal" class="modal">
+    <span class="close">&times;</span>
+    <img id="modalImage" src="" alt="Modal Image">
+  </div>
+  <hr>
+
+  <h2>Font Zoom-In/Out</h2>
+  <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, unde officiis! Ullam architecto doloribus quis repudiandae deleniti, molestias sit velit magnam, minima consequuntur ad quaerat dignissimos libero beatae laborum id.
+  Cupiditate praesentium expedita repudiandae aperiam dignissimos quidem vero, impedit quod est hic unde repellendus dolores reiciendis quos possimus aut recusandae odio ipsa consectetur dolorum numquam fugit. Fuga eos laboriosam quis!
+  Numquam minima, quod similique eum veritatis amet impedit non enim corrupti. Dolor earum esse, sit sapiente culpa fuga asperiores ratione perspiciatis odit, sint at maiores alias impedit? Explicabo, ut delectus!
+  Error consequuntur voluptatum ipsam ea quas, repellendus magni omnis voluptas illo debitis porro, accusamus nemo eos accusantium nostrum blanditiis architecto rerum vel consectetur officia esse tenetur. Quia magni reiciendis fuga.
+  Numquam, officiis deleniti. Eum numquam officiis quo animi, obcaecati magnam ex voluptatum neque possimus nemo cum recusandae aliquam sapiente incidunt itaque totam repellendus deserunt rerum deleniti suscipit labore! Iste, culpa.</p>
+  <button id="btnPlus">+</button>
+  <button id="btnMinus">-</button>
+  <script src="./app.js">
+  </script>
+</body>
+
+</html>
