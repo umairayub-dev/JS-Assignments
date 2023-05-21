@@ -69,11 +69,11 @@ document.write("<br><br><br>Total cost of " + numberOfPeople +  " tickets to a m
 
 // 5. Write a script to display multiplication table of any number in your browser.
 document.write("<br><br><h3>Multiplication Table of 11</h3>")
-for (let index = 1; index <= 10; index++) {
+for (var index = 1; index <= 10; index++) {
     document.write("<br>11x"+ index + " = " + 11*index)
 }
 
-// 6. The Temperature Converter: It’s hot out! Let’s make a converter based on the steps here.
+// 6. The Temperature Converter: It’s hot out! var’s make a converter based on the steps here.
 // a. Store a Celsius temperature into a variable.
 // b. Convert it to Fahrenheit & output “NNoC is NNoF”.
 // c. Now store a Fahrenheit temperature into a variable.

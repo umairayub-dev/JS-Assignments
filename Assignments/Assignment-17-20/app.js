@@ -128,7 +128,7 @@ document.write("<hr>")
 var numbers = [24, 53, 78, 91, 12]
 var largestNumber = numbers[0]
 
-for (let index = 0; index < numbers.length; index++) {
+for (var index = 0; index < numbers.length; index++) {
     if (numbers[index] > largestNumber) {
         largestNumber = numbers[index]
     }
@@ -144,7 +144,7 @@ document.write("<hr>")
 
 var smallestNumber = numbers[0]
 
-for (let index = 0; index < numbers.length; index++) {
+for (var index = 0; index < numbers.length; index++) {
     if (numbers[index] < smallestNumber) {
         smallestNumber = numbers[index]
     }
@@ -157,7 +157,7 @@ document.write("<hr>")
 
 // 10. Write a program to print multiples of 5 ranging 1 to 100.
 var multiplesOfFive = []
-for (let index = 1; index <= 20; index++) {
+for (var index = 1; index <= 20; index++) {
     multiplesOfFive.push(5 * index)
 }
 document.write("<br> " +multiplesOfFive)

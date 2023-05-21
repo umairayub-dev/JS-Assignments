@@ -96,7 +96,7 @@ document.write("<hr>")
 // & display counting in your browser.
 function displayCounting(startNum, endNum) {
   document.write("<br>Counting from " + startNum + " to " + endNum)
-  for (let index = startNum; index <= endNum; index++) {
+  for (var index = startNum; index <= endNum; index++) {
     document.write("<br>" + index)
   }
 }
@@ -196,8 +196,8 @@ function findLongestWord(str) {
   var words = str.split(" ")
   var longestWord = ""
   
-  for (let index = 0; index < words.length; index++) {
-    const word = words[index];
+  for (var index = 0; index < words.length; index++) {
+    var word = words[index];
     if (word.length > longestWord.length) {
       longestWord = word
     }
@@ -219,14 +219,14 @@ document.write("<hr>")
 document.write("Count letters")
 function countLetters(str, letter) {
   var count = 0;
-  for (let index = 0; index < str.length; index++) {
+  for (var index = 0; index < str.length; index++) {
     if (str.charAt(index).toLowerCase() === letter.toLowerCase()) {
       count++
     }
   }
   document.write("<br>String: " + str)
   document.write("<br>Letter to count: " + letter)
-  document.write(`<br>There are ${count} "${letter}" in this string`)
+  document.write("<br>There are " + count + ' "' + letter + '" in this string');
 }
 countLetters("JSResources.com", "o")
 

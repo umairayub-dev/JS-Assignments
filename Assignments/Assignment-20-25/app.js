@@ -245,8 +245,8 @@ document.write("<hr>")
 var university = "University of Karachi"
 var arr = university.split('')
 document.write("<br>String: " + university)
-for (let index = 0; index < arr.length; index++) {
-  const element = arr[index];
+for (var index = 0; index < arr.length; index++) {
+  var element = arr[index];
   document.write("<br>" + element)
 }
 
@@ -263,8 +263,8 @@ document.write("<hr>")
 var st_string = "The quick brown fox jumps over the lazy dog"
 var ar_array = st_string.toLowerCase().split(" ")
 var the_Count = 0
-for (let index = 0; index < ar_array.length; index++) {
-  const element = ar_array[index];
+for (var index = 0; index < ar_array.length; index++) {
+  var element = ar_array[index];
   if (element === "the") {
     the_Count++
   }

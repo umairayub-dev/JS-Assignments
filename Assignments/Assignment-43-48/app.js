@@ -13,9 +13,8 @@ link.addEventListener("click", function () {
 // image Show the message in alert to user.
 var images = document.getElementsByClassName("mobile-image");
 
-for (let index = 0; index < images.length; index++) {
+for (var index = 0; index < images.length; index++) {
   images[index].addEventListener("click", function () {
-    console.log("he;;op")
     alert("Thanks for purchasing a phone from us");
   })
 }

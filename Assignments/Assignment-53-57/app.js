@@ -1,12 +1,12 @@
 // Assignment # 53-57 Events
 
 // 1. Modal with Images
-var images = document.querySelectorAll(".image")
+var images = document.getElementsByClassName("image");
 var modal = document.getElementById("modal")
 var modalImage = document.getElementById("modalImage")
-var closeModal = document.querySelector(".close")
+var closeModal = document.getElementsByClassName("close")
 
-for (let index = 0; index < images.length; index++) {
+for (var index = 0; index < images.length; index++) {
   var image = images[index];
   image.addEventListener("click", function(){
     modalImage.src = this.src

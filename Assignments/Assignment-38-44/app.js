@@ -3,7 +3,7 @@
 // 1. Write a custom function power ( a, b ), to calculate the value of a raised to b.
 function power(a, b) {
   var result = a ** b
-  document.write(`<br> ${a} raised to power ${b} is ${result}`)
+  document.write("<br> " + a + " raised to power " + b + " is " + result);
   return result
 }
 
@@ -18,9 +18,9 @@ var year = +prompt("Please enter year to check if its leap or not")
 function isLeapYear(year) {
   var isLeap = new Date(year, 1, 29).getDate() === 29
   if (isLeap) {
-    document.write(`<br>The year ${year} is a leap year`)
+    document.write("<br>The year " + year + " is a leap year");
   } else {
-    document.write(`<br>The year ${year} is not a leap year`)
+    document.write("<br>The year " + year + " is not a leap year");
   }
 }
 isLeapYear(year)
@@ -39,8 +39,9 @@ function calcS(a, b, c) {
 function calculateArea(a, b, c) {
   var S = calcS(a, b, c)
   var area = Math.sqrt(S * (S - a) * (S - b) * (S - c))
-  document.write(`<br> A = ${a}, B = ${b}, C = ${c} and S = ${S}`)
-  document.write(`<br> The Area of the triangle is ${area}`)
+  document.write("<br> A = " + a + ", B = " + b + ", C = " + c + " and S = " + S);
+  document.write("<br> The Area of the triangle is " + area);
+
 }
 var sideA = 5
 var sideB = 7
@@ -71,8 +72,8 @@ function mainFunction(subject1, subject2, subject3) {
   var average = calculateAvg(subject1, subject2, subject3)
   var percentage = calculatePercentage(subject1, subject2, subject3)
 
-  document.write(`<br> Average: ${average}`)
-  document.write(`<br> Percentage: ${percentage}%`)
+  document.write("<br> Average: " + average);
+  document.write("<br> Percentage: " + percentage + "%");
 }
 var subject1 = 70
 var subject2 = 56
@@ -85,7 +86,7 @@ document.write("<hr>")
 // function that will perform the same functionality. You can code
 // for single character as of now.
 function customIndexOf(str, char) {
-  for (let index = 0; index < str.length; index++) {
+  for (var index = 0; index < str.length; index++) {
     if (str[index] === char) {
       return index
     }
@@ -96,7 +97,7 @@ function customIndexOf(str, char) {
 var sentence = "Hello World"
 var index = customIndexOf(sentence, "W")
 
-document.write(`<br> String: ${sentence}`)
+document.write("<br> String: " + sentence);
 document.write("<br> Char to find 'W'")
 document.write("<br>Index of 'W' is " + index)
 document.write("<hr>")
@@ -109,7 +110,7 @@ function deleteVowels(sentence) {
   var vowels = ['a', 'e', 'i', 'o', 'u']
   var result = ''
 
-  for (let index = 0; index < sentence.length; index++) {
+  for (var index = 0; index < sentence.length; index++) {
     var char = sentence[index].toLowerCase();
     if (!vowels.includes(char)) {
       result += sentence[index]
@@ -134,9 +135,9 @@ function countVowels(text) {
   var count = 0
 
   text = text.toLowerCase()
-  for (let index = 0; index < text.length; index++) {
-    const currentChar = text[index];
-    const nextChar = text[index + 1];
+  for (var index = 0; index < text.length; index++) {
+    var currentChar = text[index];
+    var nextChar = text[index + 1];
 
     switch (currentChar) {
       case 'a':
@@ -144,12 +145,12 @@ function countVowels(text) {
       case 'i':
       case 'o':
       case 'u':
-        if(vowels.includes(nextChar)){
+        if (vowels.includes(nextChar)) {
           count++
           console.log(currentChar, nextChar);
         }
         break;
-    
+
       default:
         break;
     }
@@ -158,8 +159,8 @@ function countVowels(text) {
 }
 var sentence = "Pleases read this application and give me gratuity"
 var count = countVowels(sentence)
-document.write("<br> Sentence: "+ sentence)
-document.write("<br> Number of Occurrences: "+ count)
+document.write("<br> Sentence: " + sentence)
+document.write("<br> Number of Occurrences: " + count)
 document.write("<hr>")
 
 
@@ -174,17 +175,17 @@ function toFeet(km) {
   return km * 3280.84
 }
 function toInches(km) {
-  return km * 39370.1 
+  return km * 39370.1
 }
 function toCentimeters(km) {
   return km * 100000
 }
 
-document.write(`<br>Distance in Kilo Meters: ${userInput}km`)
-document.write(`<br>Distance in Meters: ${toMeters(userInput)}m`)
-document.write(`<br>Distance in Feet: ${toFeet(userInput)}ft`)
-document.write(`<br>Distance in Inches: ${toInches(userInput)}In`)
-document.write(`<br>Distance in Centimeters: ${toCentimeters(userInput)}cm`)
+document.write("<br>Distance in Kilo Meters: " + userInput + "km");
+document.write("<br>Distance in Meters: " + toMeters(userInput) + "m");
+document.write("<br>Distance in Feet: " + toFeet(userInput) + "ft");
+document.write("<br>Distance in Inches: " + toInches(userInput) + "In");
+document.write("<br>Distance in Centimeters: " + toCentimeters(userInput) + "cm");
 document.write("<hr>")
 
 // 9. Write a program to calculate overtime pay of employees.

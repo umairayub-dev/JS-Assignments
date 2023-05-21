@@ -10,7 +10,7 @@ function submitForm(event) {
   var password = document.getElementById("password").value;
 
   var formDiv = document.getElementById("formData")
-  formDiv.innerHTML = `<h3> Form Data: </h3> <p><strong>Name: </strong>${name}</p> <p><strong>Email: </strong>${email}</p><p><strong>Password: </strong>${password}</p>`
+  formDiv.innerHTML = '<h3> Form Data: </h3> <p><strong>Name: </strong>' + name + '</p> <p><strong>Email: </strong>' + email + '</p><p><strong>Password: </strong>' + password + '</p>';
   document.getElementById("signupForm").reset()
 }
 

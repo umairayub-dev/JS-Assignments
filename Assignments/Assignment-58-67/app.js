@@ -9,8 +9,8 @@ console.log(mainContent);
 
 // iii. Get all elements of class “render” and show their innerHTML in browser.
 var renders = document.querySelectorAll(".render")
-for (let index = 0; index < renders.length; index++) {
-  const element = renders[index];
+for (var index = 0; index < renders.length; index++) {
+  var element = renders[index];
   document.write("<br>" + element.innerHTML)
 }
 // iv. Fill input value whose element id first-name using javascript.
